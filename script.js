@@ -25,7 +25,7 @@ function getReposData(username) {
 
 function displayProfileData(data) {
     let template = `<div id="profile-card"
-            class="glass-panel rounded-2xl p-6 md:p-8 transform transition-all duration-300 hover:scale-[1.02]">
+            class="glass-panel rounded-2xl p-6 md:p-8 transform transition-all duration-300 hover:scale-[1.02] max-w-md mx-auto">
             <div class="flex flex-col items-center text-center">
                 <!-- Avatar with Ring -->
                 <div class="relative mb-6 group cursor-pointer">
@@ -119,7 +119,7 @@ function displayReposData(repos) {
     const topRepos = repos.slice(0, 5);
     // Add a title if there are repos
     if (topRepos.length > 0) {
-        reposContainer.innerHTML = `<h3 class="text-xl font-bold text-white mb-4 pl-1">Latest Repositories</h3>`;
+        reposContainer.innerHTML = `<h3 class="col-span-full text-xl font-bold text-white mb-2 pl-1">Latest Repositories</h3>`;
     }
 
     topRepos.forEach(repo => {

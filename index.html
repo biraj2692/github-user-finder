@@ -72,9 +72,9 @@
 
 <body class="text-white flex items-center justify-center p-4 selection:bg-primary selection:text-white">
 
-    <div class="max-w-md w-full space-y-8 animate-fade-in">
+    <div class="w-full max-w-5xl space-y-8 animate-fade-in relative transition-all duration-300">
         <!-- Header Section -->
-        <div class="text-center space-y-2">
+        <div class="text-center space-y-2 max-w-md mx-auto">
             <div
                 class="inline-block p-3 rounded-full bg-slate-800/50 border border-slate-700 mb-4 shadow-lg animate-float">
                 <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
@@ -93,7 +93,7 @@
         </div>
 
         <!-- Search Bar -->
-        <div class="relative group z-10">
+        <div class="relative group z-10 max-w-md mx-auto">
             <div
                 class="absolute -inset-1 bg-gradient-to-r from-primary to-secondary rounded-xl blur opacity-25 group-hover:opacity-60 transition duration-500">
             </div>
@@ -118,7 +118,7 @@
 
         <!-- Result Card (Mock Data) -->
         <!-- Loading Skeleton (Hidden by default) -->
-        <div id="loading-card" class="glass-panel rounded-2xl p-6 md:p-8">
+        <div id="loading-card" class="glass-panel rounded-2xl p-6 md:p-8 hidden max-w-md mx-auto">
             <div class="flex flex-col items-center text-center animate-pulse">
                 <!-- Avatar Skeleton -->
                 <div class="w-28 h-28 rounded-full bg-slate-700/50 mb-6 border-4 border-slate-800"></div>
@@ -174,7 +174,7 @@
         <div id="result-card"></div>
 
         <!-- Repos List -->
-        <div id="repos-list" class="space-y-4 w-full"></div>
+        <div id="repos-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full"></div>
 
         <!-- Footer -->
         <div class="text-center text-slate-500 text-sm">
